@@ -10,6 +10,18 @@ Ticket.FIXTURES = [
 		title: 'Ticket 1',
 		description: 'My first ticket',
 		status: 'New'
+	},
+	{
+		id: 2, 
+		title: 'Ticket 2',
+		description: 'My second ticket',
+		status: 'New'
+	},
+	{
+		id: 3,
+		title: 'Ticket 3',
+		description: 'My third ticket',
+		status: 'New'
 	}
 ];
 

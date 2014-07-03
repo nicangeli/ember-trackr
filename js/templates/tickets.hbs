@@ -1,5 +1,15 @@
-<ul>
-	{{#each}}
-		<li>{{title}}</li>
-	{{/each}}
-</ul>
+<div class="row">
+	<div class="col-md-4">
+		<nav class="list-group">
+			{{#each}}
+					{{#link-to 'ticket' this class="list-group-item"}}
+						<span class="badge pull-right">{{status}}</span>
+						{{title}}
+					{{/link-to}} 
+			{{/each}}
+		</nav>
+	</div>
+	<div class="col-md-8">
+		{{outlet}}
+	</div>
+</div>
