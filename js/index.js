@@ -5,12 +5,18 @@ var App = window.App = require('./config/app');
 require('./templates');
 
 
+App.GravatarImageComponent = require('./components/gravatar_image_component');
+App.MailToComponent = require('./components/mail_to_component');
 App.ApplicationController = require('./controllers/application_controller');
 App.TicketController = require('./controllers/ticket_controller');
 App.TicketsNewController = require('./controllers/tickets/new_controller');
 App.Ticket = require('./models/ticket');
+App.User = require('./models/user');
 App.TicketRoute = require('./routes/ticket_route');
 App.TicketsRoute = require('./routes/tickets_route');
+App.UserRoute = require('./routes/user_route');
+App.UsersRoute = require('./routes/users_route');
+App.UsersNewRoute = require('./routes/users/new_route');
 App.TicketsNewRoute = require('./routes/tickets/new_route');
 App.ApplicationView = require('./views/application_view');
 App.TextField = require('./views/text_field');
