@@ -52,3 +52,11 @@ test('creating a ticket', function() {
 			ok(find('.panel-title:contains("Open")').length, 'expected ticket status to be "Open"');
 		});
 });
+
+test('cancelling a ticket', function() {
+	visit('/tickets/new')
+		.click('button:contains("Cancel")')
+		.then(function() {
+			equal(find('[name="title"]').length, 0, 'expect not to find the title field');
+		});
+});
